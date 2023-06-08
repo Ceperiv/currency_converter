@@ -1,0 +1,37 @@
+.header {
+  background: linear-gradient(to bottom right, #0080ff, #00ffbf);
+  padding: 40px;
+  color: white;
+  height: 220px;
+
+  &__title {
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  &__exchange-rates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    .currency {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+      &__symbol {
+        font-size: 32px;
+        margin-bottom: 5px;
+      }
+
+      &__value {
+        font-size: 24px;
+      }
+    }
+  }
+}

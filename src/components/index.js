@@ -1,0 +1,5 @@
+export * from './error404/error404'
+export * from './footer/footer'
+export * from './header/header'
+export * from './main/main'
+export * from './routers/routers'
