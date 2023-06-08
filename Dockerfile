@@ -1,17 +1,13 @@
-FROM node:16.18.0
+FROM node:17-alpine
 
-# set working directory
-WORKDIR /src/App
+WORKDIR /app
 
+COPY package.json .
 
-# install app dependencies
-COPY package.json ./
+RUN npm install
 
-RUN npm install --silent
+COPY . .
 
+EXPOSE 3000
 
-# add app
-COPY src ./
-
-# start app
 CMD ["npm", "start"]
