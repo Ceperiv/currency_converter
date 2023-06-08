@@ -1,7 +1,7 @@
 FROM node:16.18.0
 
 # set working directory
-WORKDIR /app
+WORKDIR /src/App
 
 
 # install app dependencies
